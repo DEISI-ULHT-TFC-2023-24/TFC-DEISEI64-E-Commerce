@@ -26,6 +26,7 @@ for customer_id, group_data in customers_grouped:
                           "UnitPrice": group_data["UnitPrice"].values[i],
                           "InvoiceNo": group_data["InvoiceNo"].values[i]}
 
-        customer_items[customer_id].append(dataset_values)
+        if(group_data["Quantity"].values[i] > 0):
+            customer_items[customer_id].append(dataset_values)
 
 print(customer_items)
