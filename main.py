@@ -4,7 +4,6 @@ datasetRetail = pd.read_excel('Online_retail.xlsx')
 
 # Group the dataset by CustomerID
 customers_grouped = datasetRetail.groupby('CustomerID')
-print(customers_grouped)
 
 # Creates an empty dictionary to store the items bought by each customer
 customer_items = {}
@@ -29,4 +28,33 @@ for customer_id, group_data in customers_grouped:
         if(group_data["Quantity"].values[i] > 0):
             customer_items[customer_id].append(dataset_values)
 
-print(customer_items)
+#counted_dataframe = customers_grouped.count()
+#print(counted_dataframe)
+
+#----------------- Distinct Product Count -----------------#
+
+# Filter the DataFrame where 'Quantity' is greater than 0
+filtered_data_quantity = datasetRetail[datasetRetail['Quantity'] > 0]
+
+# Check if any rows satisfy the condition
+if not filtered_data_quantity.empty:
+    category_counts_stockcode = filtered_data_quantity['StockCode'].value_counts()
+    #print(category_counts_stockcode)
+
+#----------------- Distinct Client Count -----------------#
+
+# Counts the different clients through the dataset
+category_counts_customerID = datasetRetail['CustomerID'].dropna().value_counts()
+#print(category_counts_customerID)
+
+#----------------- Distinct Purcheses Done -----------------#
+
+category_counts_invoiceNo = filtered_data_quantity['InvoiceNo'].value_counts()
+#print(category_counts_invoiceNo)
+
+#---------------- Scatter Plot Purchases ----------------#
+
+#TODO NOT FINISHED AND NOT TESTED YET
+
+purchases_variables = filtered_data_quantity[["StockCode", "CustomerID", "InvoiceNo", "InvoiceDate"]]
+pd.plotting.scatter_matrix(purchases_variables)
