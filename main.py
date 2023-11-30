@@ -51,10 +51,18 @@ category_counts_customerID = datasetRetail['CustomerID'].dropna().value_counts()
 
 category_counts_invoiceNo = filtered_data_quantity['InvoiceNo'].value_counts()
 #print(category_counts_invoiceNo)
+#Purchases reimbursed: 5172
 
 #---------------- Scatter Plot Purchases ----------------#
 
 #TODO NOT FINISHED AND NOT TESTED YET
 
-purchases_variables = filtered_data_quantity[["StockCode", "CustomerID", "InvoiceNo", "InvoiceDate"]]
-pd.plotting.scatter_matrix(purchases_variables)
+#purchases_variables = filtered_data_quantity[["StockCode", "CustomerID", "InvoiceNo", "InvoiceDate"]]
+#pd.plotting.scatter_matrix(purchases_variables)
+
+#---------------- Products reimbursed ----------------#
+
+purchases_reimbursed = len(datasetRetail['InvoiceNo']) - len(filtered_data_quantity['InvoiceNo'])
+print(purchases_reimbursed) #10624
+
+#---------------- Purchases with no client ID ----------------#
