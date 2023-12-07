@@ -31,10 +31,11 @@ for customer_id, group_data in customers_grouped:
 #counted_dataframe = customers_grouped.count()
 #print(counted_dataframe)
 
-#----------------- Distinct Product Count -----------------#
+#----------------- Distinct Product Count and CustomerID is not null -----------------#
 
-# Filter the DataFrame where 'Quantity' is greater than 0
-filtered_data_quantity = datasetRetail[datasetRetail['Quantity'] > 0]
+# Filter the DataFrame where 'Quantity' is greater than 0 (531285) and CustomerID is not null
+filtered_data_quantity = datasetRetail[(datasetRetail['Quantity'] > 0) & (datasetRetail['CustomerID'].isna() == False)]
+print(filtered_data_quantity) # 397924
 
 # Check if any rows satisfy the condition
 if not filtered_data_quantity.empty:
@@ -63,6 +64,9 @@ category_counts_invoiceNo = filtered_data_quantity['InvoiceNo'].value_counts()
 #---------------- Products reimbursed ----------------#
 
 purchases_reimbursed = len(datasetRetail['InvoiceNo']) - len(filtered_data_quantity['InvoiceNo'])
-print(purchases_reimbursed) #10624
+#print(purchases_reimbursed) #10624
 
 #---------------- Purchases with no client ID ----------------#
+
+empty_values_count = datasetRetail['CustomerID'].isna().sum()
+#print(empty_values_count) #135080
