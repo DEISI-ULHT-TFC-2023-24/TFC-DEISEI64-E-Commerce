@@ -1,5 +1,6 @@
 # TFC - DEISI 64
 
+- This repo will be in the institutional account later.
 - URL Dataset Online Retail: https://archive.ics.uci.edu/dataset/352/online+retail
 - Deisi64 (Analysis of joint purchasing patterns for recommendation systems in an online gift store), Copyright of Henrique Aleixo e João Serralha, Universidade Lusófona.
 ___
