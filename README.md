@@ -38,5 +38,6 @@ Package | Installation
 `networkx` | pip install networkx
 `matplotlib` | pip install matplotlib
 `pandas` | pip install pandas
+`seaborn` | pip install seaborn
 
 ***All done.*** Now, you can run the queries and make sure you have all the files locally.
