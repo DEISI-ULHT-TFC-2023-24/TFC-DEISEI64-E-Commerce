@@ -1,4 +1,4 @@
-# TFC - DEISI 64
+# TFC - DEISI 64 - Recommender Systems
 
 - This repo will be in the institutional account later.
 - URL Dataset Online Retail: https://archive.ics.uci.edu/dataset/352/online+retail
