@@ -34,6 +34,7 @@ Before running the queries, it is required to install these packages in the VSCo
 Package | Installation
  :---: | ---
 `pip` | python get-pip.py
+`openpyxl` | pip install openpyxl
 `numpy` | pip install numpy
 `networkx` | pip install networkx
 `matplotlib` | pip install matplotlib
