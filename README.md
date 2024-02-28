@@ -43,5 +43,6 @@ Package | Installation
 `matplotlib` | pip install matplotlib
 `pandas` | pip install pandas
 `seaborn` | pip install seaborn
+`scipy` | pip install scipy
 
 ***All done.*** Now, you can run the queries and make sure you have all the files locally.
