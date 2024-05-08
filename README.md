@@ -16,7 +16,7 @@ products, purchases, and customers, extracting information from these relationsh
 to make more effective recommendations.
 
 To carry out our Final Course Work we will use several disciplines and
-scientific areas taught in the Computer Engineering course[^ULHT21]
+scientific areas taught in the Computer Engineering course.[^ULHT21]
 
 [^ULHT21]: Universidade Lusófona de Humanidades e Tecnologia, www.ulusofona.pt,
 acedido em Out. 2021.
@@ -36,11 +36,11 @@ Many customers of the company are wholesalers.[^DataSet]
 To run the simulation, you need to pull the repository.
 Then, install [Python environment](https://www.python.org/downloads/) and you will have two options:
 
-Either open the file **Queries.ipynb** with [VSCode](https://code.visualstudio.com/download)
+Either open the the folder with [VSCode](https://code.visualstudio.com/download)
 
 ***OR***
 
-Install [Jupyter Notebook](https://jupyter.org/install) to open the file locally.
+Install [Jupyter Notebook](https://jupyter.org/install) to open the files locally.
 
 ## **Libraries**
 
@@ -82,3 +82,62 @@ The idea in this network, is that products frequently purchased together have so
 if a user is buying product X, product Y and Z will be recommended if these are normally purchased together with X.
 
 ![Product Map](assets/product.png)
+
+With the filtered dataset, we can start by grouping the data by **CustomerID** and **StockCode**. Next, let's put this together
+table that we created with itself, with the Customer ID being the connection key.
+
+![Merge](assets/merge.png)
+
+With the relationship created we can now remove the repeated instances as per
+example ‘A-A’. We will also give a ‘weight’ to each relationship taking into account the
+number of occurrences of the same.
+
+![Weight](assets/weight.png)
+
+This data is inserted into a .csv file and imported to Gephi, where it uses a **Community Detection Algorithm**[^ViJe08] and gives us the __number of communities__ and a __similarity number__ (Modularity Class). Then, we use a distribution algorithm called **Force Atlas** to make the representation needed and added different
+colors to each different community encoutered.
+
+[^ViJe08]: Vincent D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, Etienne Lefebvre, Fast unfolding of communities in large networks, 
+in Journal of Statistical Mechanics: Theory and Experiment 2008 (10), P1000
+
+![Network1](assets/network1.png)
+
+Context | Statistics
+ :---: | ---
+`Number of nodes` | 2619
+`Number of edges` | 128190
+`Average Degree` | 97,892
+`Number of Communities` | 14
+`Modularity Class` | 0,210
+
+Despite the number of communities, from this representation we can see **six communities** that are more relevant (the ones we can see):
+
+- [x] Purple Community :purple_circle:
+- [x] Green Community :green_circle:
+- [x] Blue Community :blue_circle:
+- [x] Black Community :black_circle:
+- [x] Orange Community :orange_circle:
+- [x] Red Community :red_circle:
+
+### 2. **Client-Client Network**
+
+The second type of interaction we will explore is the similarity between
+users based on the products they purchase. For example, we have three
+users, A, B and C, and we find that A and B purchased products identical to those of
+user C then we can recommend to user C products that both others
+users have purchased, as illustrated below. Additionally, products purchased
+by A and C but not by B, may also be of interest to B.
+
+![Client Map](assets/client.png)
+
+The process of creating the relationship is the same and only difference is that the key used for this merge is **StockCode**.
+
+![Network2](assets/network2.png)
+
+Context | Statistics
+ :---: | ---
+`Number of nodes` | 1717
+`Number of edges` | 275463
+`Average Degree` | 320,865
+`Number of Communities` | 5
+`Modularity Class` | 0,162
