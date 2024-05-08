@@ -1,10 +1,6 @@
 # TFC - DEISI 64 - Recommender Systems
 
-- This repo will be in the institutional account later.
-- URL Dataset Online Retail: https://archive.ics.uci.edu/dataset/352/online+retail
 - Deisi64 (Analysis of joint purchasing patterns for recommendation systems in an online gift store), Copyright of Henrique Aleixo e João Serralha, Universidade Lusófona.
-
-![OnlineRetail Banner](assets/OnlineRetail.png)
 
 ___
 ## **Introduction**
@@ -18,6 +14,22 @@ from a gift store. The intention is to use this data to create a network structu
 allows us to explore various network analysis methodologies. We aim to relate
 products, purchases, and customers, extracting information from these relationships
 to make more effective recommendations.
+
+To carry out our Final Course Work we will use several disciplines and
+scientific areas taught in the Computer Engineering course[^ULHT21]
+
+[^ULHT21]: Universidade Lusófona de Humanidades e Tecnologia, www.ulusofona.pt,
+acedido em Out. 2021.
+
+## **DataSet**
+
+This is a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 
+for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. 
+Many customers of the company are wholesalers.[^DataSet]
+
+[^DataSet]: Online Retail. (2015). UCI Machine Learning Repository. https://archive.ics.uci.edu/dataset/352/online+retail
+
+![OnlineRetail Banner](assets/OnlineRetail.png)
 
 ## **Installation guide**
 
