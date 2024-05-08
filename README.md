@@ -114,7 +114,7 @@ Despite the number of communities, from this representation we can see **six com
 
 - [x] Purple Community :purple_circle:
 - [x] Green Community :green_circle:
-- [x] Blue Community :blue_circle:
+- [x] Blue Community :large_blue_circle:
 - [x] Black Community :black_circle:
 - [x] Orange Community :orange_circle:
 - [x] Red Community :red_circle:
