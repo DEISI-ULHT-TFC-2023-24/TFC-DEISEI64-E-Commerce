@@ -47,10 +47,26 @@ Package | Installation
 
 ***All done.*** Now, you can run the queries and make sure you have all the files locally.
 
+## **Gephi**
+
+To be able to create a network structure, it is required to use a open source platform called Gephi[^BaHe09]. This software has many important functions, but what we want
+is to transform our input to something we can see graphically. It uses social network analysis algorithms for our purpose.
+
+[^BaHe09]: Bastian M., Heymann S., Jacomy M. (2009). Gephi: an open source software for
+exploring and manipulating networks. International AAAI Conference on Weblogs
+and Social Media.
+
+![Gephi](assets/gephi1.png)
+
 ## **Network creation process**
 
 First, we need to check the data we have and take out information that we will not need, to be easier to make this process.
 In this specific DataSet, we encountered cells that had products reimbursed, expenses from the store and some cells without
 Client ID's, being this data to be filtered from the original DataSet.
 
-### - **Product-Product Network**
+### 1. **Product-Product Network**
+
+The idea in this network, is that products frequently purchased together have some degree of similarity from the outset, therefore
+if a user is buying product X, product Y and Z will be recommended if these are normally purchased together with X.
+
+![Product Map](assets/product.png)
