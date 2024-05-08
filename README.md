@@ -46,3 +46,11 @@ Package | Installation
 `scipy` | pip install scipy
 
 ***All done.*** Now, you can run the queries and make sure you have all the files locally.
+
+## **Network creation process**
+
+First, we need to check the data we have and take out information that we will not need, to be easier to make this process.
+In this specific DataSet, we encountered cells that had products reimbursed, expenses from the store and some cells without
+Client ID's, being this data to be filtered from the original DataSet.
+
+### - **Product-Product Network**
