@@ -104,11 +104,11 @@ in Journal of Statistical Mechanics: Theory and Experiment 2008 (10), P1000
 
 Context | Statistics
  :---: | ---
-`Number of nodes` | 2619
-`Number of edges` | 128190
-`Average Degree` | 97,892
-`Number of Communities` | 14
-`Modularity Class` | 0,210
+`Number of nodes` | 2540
+`Number of edges` | 96607
+`Average Degree` | 76,069
+`Number of Communities` | 22
+`Modularity Class` | 0,230
 
 Despite the number of communities, from this representation we can see **six communities** that are more relevant (the ones we can see):
 
