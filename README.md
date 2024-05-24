@@ -76,6 +76,8 @@ First, we need to check the data we have and take out information that we will n
 In this specific DataSet, we encountered cells that had products reimbursed, expenses from the store and some cells without
 Client ID's, being this data to be filtered from the original DataSet.
 
+![Filter](assets/filter.png)
+
 ### 1. **Product-Product Network**
 
 The idea in this network, is that products frequently purchased together have some degree of similarity from the outset, therefore
