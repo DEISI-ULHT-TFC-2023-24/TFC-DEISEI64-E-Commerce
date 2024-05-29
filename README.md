@@ -156,9 +156,24 @@ The term ‘Product Share’ or ‘Together Purchase’ refers to how many times
 product is purchased together with other products. For example, if product A is
 purchased together with 75 other different products out of a total of 100, this
 means that the 'Product Share' of product A is 75%. In short, it is a measure
-which shows the popularity of a product.
+which shows the popularity of a product.    
 
-The following histogram representing the distribution of gift store products
-depending on your Joint Purchase value (on the scale 0.0 is 0% and 1.0 is 100%):
+The following histogram represents the distribution of gift store products
+depending on your joint purchase value (on the scale 0.0 is 0% and 1.0 is 100%):
 
 ![Shares1](assets/shares1.png)
+
+Products that have a product share greater than 0.4 or 40% are not only not useful but
+their existence has a negative impact on network viewing.
+This is because they have too many connections with other products, so they end up
+adding additional connections makes it difficult to interpret the network without adding
+benefits.
+
+Since products above 40% joint purchase have this type
+of negative characteristics for visualization, we decided to create a maximum threshold
+of product share that a product can have. Any product above >40% of
+joint purchase will be eliminated in order to reduce noise and therefore
+improve network visualization and interpretation.
+
+**Question 2** - *Which products are most frequently purchased together with
+others? What is its value in terms of recommendation?*
