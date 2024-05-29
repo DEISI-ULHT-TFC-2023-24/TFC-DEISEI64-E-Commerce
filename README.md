@@ -143,3 +143,22 @@ Context | Statistics
 `Average Degree` | 320,865
 `Number of Communities` | 5
 `Modularity Class` | 0,162
+
+## **Results**
+
+From this point, we want to extract all of this information and explore different patterns in each network. 
+In order to do that, we propose some questions that need an answer:
+
+**Question 1** - *Which products are most frequently purchased together with
+others? What is its value in terms of recommendation?*
+
+The term ‘Product Share’ or ‘Together Purchase’ refers to how many times a
+product is purchased together with other products. For example, if product A is
+purchased together with 75 other different products out of a total of 100, this
+means that the 'Product Share' of product A is 75%. In short, it is a measure
+which shows the popularity of a product.
+
+The following histogram representing the distribution of gift store products
+depending on your Joint Purchase value (on the scale 0.0 is 0% and 1.0 is 100%):
+
+![Shares1](assets/shares1.png)
