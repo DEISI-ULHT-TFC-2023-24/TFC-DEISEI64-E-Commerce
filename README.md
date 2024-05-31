@@ -175,5 +175,11 @@ of product share that a product can have. Any product above >40% of
 joint purchase will be eliminated in order to reduce noise and therefore
 improve network visualization and interpretation.
 
-**Question 2** - *Which products are most frequently purchased together with
-others? What is its value in terms of recommendation?*
+![Shares2](assets/shares2.png)
+
+**Question 2** - *Which products are most frequently purchased together?*
+
+In the generated network, we obtained a modularity value of 0.23, which is
+considered suboptimal. This value indicates that the community structure present in the
+network is not very strong, that is, connections within communities are not
+significantly denser than connections between different communities.
