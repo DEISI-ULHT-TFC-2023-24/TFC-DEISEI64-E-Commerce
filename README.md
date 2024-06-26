@@ -184,4 +184,54 @@ considered suboptimal. This value indicates that the community structure present
 network is not very strong, that is, connections within communities are not
 significantly denser than connections between different communities.
 
-(More to add later)
+In order to facilitate the understanding of the differences between the main communities
+we obtained a Top 5 of the most popular products for each community, as can be seen
+observe in this output.
+
+![Products](assets/products.png)
+
+Using this information along with manually searching for products by
+communities we were able to identify the main themes in some communities:
++ Community 1 – bags and purses
++ Community 2 – kitchen utensils
++ Community 3 – gardening and outdoor tools
++ Community 4 – baking articles
++ Community 6 – Christmas objects and decorations
+
+**Question 3** - *What are the Customer profiles?*
+
+The following figure represents the Customer-Client network already changed in order to
+enable better visualization. In the network, each node is a representative of a client and
+the edges between the nodes represent the connection between two clients, that is, clients that
+have purchased items in common. To obtain this visualization we had to
+manipulate the initial network by changing the impact of certain parameters, e.g.
+assign size to nodes depending on their degree.
+
+![Clients](assets/client_modif.png)
+
+The degree represents the number of other customers who also purchased
+the same products as the initial customer. In other words, if a customer purchased
+certain products, your node degree is determined by the number of customers that
+purchased any of these same products.
+
+![Degree](assets/node_degree.png)
+
+As seen in this figure, we obtained the value 286 as the median. This means
+that half of customers are connected to 286 or more other customers that
+shared at least one product in common. This median reflects the distribution
+of connections in the customer network, indicating that there is a large number of customers
+with a considerable number of purchases in common.
+
+## **Conclusion**
+
+The main objective of this Final Course Work (TFC) was the investigation and
+exploration of the records of an online gift store, with the aim of observing and
+analyze joint purchasing patterns. Through the analysis of social networks we intended
+understand how various types of network modeling impact the similarity between
+products and customers and how we can use this to improve recommendations.
+
+Through analysis we come across the results of the investigation, firstly
+We want to refer to the level of modularity of the generated networks. As we already had
+mentioned, this low level of modularity indicates that there is a weak structure of
+communities, which makes certain types of analysis difficult for us since using the
+communities for recommendations may not be effective.
