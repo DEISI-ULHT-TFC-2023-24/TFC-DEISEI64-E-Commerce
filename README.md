@@ -2,6 +2,21 @@
 
 - Deisi64 (Analysis of joint purchasing patterns for recommendation systems in an online gift store), Copyright of Henrique Aleixo e João Serralha, Universidade Lusófona.
 
+## **Presentation text**
+
+A recomendação de produtos desempenha um papel vital no panorama do
+comércio eletrónico atual. À medida que as lojas online continuam a crescer, este aspeto
+torna-se um dos principais impulsionadores do sucesso e da competitividade no
+mercado. No entanto, muitos sistemas de recomendação tradicionais enfrentam
+desafios em termos de precisão e relevância das recomendações oferecidas. Portanto,
+aprimorar a precisão das recomendações tornou-se um objetivo fundamental.
+O nosso objetivo foi a aplicação de análise de redes sociais com intuito de
+beneficiar os sistemas de recomendações numa gift store.
+
+## **Presentation image**
+
+![Shares2](assets/shares2.png)
+
 ___
 ## **Introduction**
 
